@@ -7,6 +7,28 @@ html{
 *{
     box-sizing: border-box;
     font-weight: 400;
+    color: white;
 }
 
 /* wrapper styles */
+
+main{
+    background: black;
+    height: 100vh;
+    display: flex;
+}
+
+main > div {
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    width: 50%;
+    border-radius: 50%;
+}
+
+h1{
+    color: white;
+}
