@@ -20,13 +20,13 @@ main{
 
 main > div {
     background: white;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 div{
     width: 50%;
     border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1{
