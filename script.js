@@ -1,6 +1,6 @@
 
 function getRandomColor() {
-    const getRandomInt =() =>{ return Math.floor(Math.random() * 255)};
+    const getRandomInt =() =>{ return Math.floor(Math.random() * 256)};
     const color = `rgb(${getRandomInt()}, ${getRandomInt()}, ${getRandomInt()})`
     return color
     }
