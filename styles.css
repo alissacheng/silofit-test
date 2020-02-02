@@ -27,6 +27,7 @@ div{
     border-radius: 50%;
     display: flex;
     flex-wrap: wrap;
+    min-width: 5px;
 }
 
 h1{

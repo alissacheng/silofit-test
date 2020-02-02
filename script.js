@@ -6,20 +6,25 @@ function getRandomColor() {
     }
     
 function splitFourCircles (){
-    $(this).css("background-color", "black")
-    $(this).removeClass("child")
+    //set a min size for the smallest circles so site doesn't break
+    if($(this).width()<15){
+        $(this).removeClass("child")
+    }else{
+        $(this).css("background-color", "transparent")
+        $(this).removeClass("child")
+    
+        $(this).html(`
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        `)
+        $(this).children("div").css("background", getRandomColor)
 
-    $(this).html(`
-    <div class="child"></div>
-    <div class="child"></div>
-    <div class="child"></div>
-    <div class="child"></div>
-    `)
-    $(this).children("div").css("background", getRandomColor)
-
-    setTimeout(function(){
-        $(".child").one("mouseenter", splitFourCircles)
-    },50)
+        setTimeout(function(){
+            $(".child").one("mouseenter", splitFourCircles)
+        },20)
+    }
 }
 
 $(function(){
