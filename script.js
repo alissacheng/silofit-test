@@ -7,7 +7,7 @@ function getRandomColor() {
     
 function splitFourCircles (){
     //set a min size for the smallest circles so site doesn't break
-    if($(this).width()<15){
+    if($(this).width()<10){
         $(this).removeClass("child")
     }else{
         $(this).css("background-color", "transparent")
