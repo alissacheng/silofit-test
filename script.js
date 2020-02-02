@@ -6,18 +6,19 @@ function getRandomColor() {
     }
     
 function splitFourCircles (){
-    $(this).css("background", "black")
+    $(this).css("background-color", "black")
+    $(this).removeClass("child")
 
     $(this).html(`
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
+    <div class="child"></div>
     `)
     $(this).children("div").css("background", getRandomColor)
+
     setTimeout(function(){
-        $("div").one("mouseenter", splitFourCircles)
-    
+        $(".child").one("mouseenter", splitFourCircles)
     },50)
 }
 
