@@ -40,11 +40,11 @@ class App extends Component {
     
     
     //loop for the week
-
     const dateArray = [...Array(7)]
 
     dateArray.forEach((_,index)=>{
   //DEALING WITH DAYS THAT GO PAST MONTH???
+  //DEALING WITH NO WEEKEND DATES???
         numberedDate = today.getDate() + index
         
         const dayIndex = new Date(`${months[monthIndex]} ${numberedDate}, ${today.getFullYear()}`).getDay()

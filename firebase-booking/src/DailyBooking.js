@@ -14,7 +14,8 @@ class DailyBooking extends Component {
         let itemId = document.getElementById(e.target.id)
 
         if (itemId.innerHTML === "Book now") {
-        itemId.innerHTML = "Cancel X";
+            //add email
+        itemId.innerHTML = "X Cancel booking";
         } else {
         itemId.innerHTML = "Book now";
         }
